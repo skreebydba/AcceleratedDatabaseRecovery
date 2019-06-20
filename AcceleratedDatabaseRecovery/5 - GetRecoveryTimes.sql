@@ -21,7 +21,8 @@ SUBSTRING(ErrorText, (PATINDEX('%redo%', ErrorText) + 5), ((CHARINDEX(',', Error
 SUBSTRING(ErrorText, (PATINDEX('%undo%', ErrorText) + 5), ((CHARINDEX('.', ErrorText, PATINDEX('%undo%', ErrorText)) - 3) - (PATINDEX('%undo%', ErrorText) + 5))) AS [Undo(ms)]
 FROM #errorlog
 WHERE ErrorText LIKE '%AcceleratedRecovery%'
-OR ErrorText LIKE '%RegularRecovery%';
+OR ErrorText LIKE '%RegularRecovery%'
+ORDER BY LogDate;
 
 
 
