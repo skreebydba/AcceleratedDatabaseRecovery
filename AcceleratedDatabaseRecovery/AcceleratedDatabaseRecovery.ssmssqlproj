@@ -15,6 +15,18 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="FBGSQL2019VM2:FBGSQL2019\skreeby">
+          <Created>2019-06-20T02:21:39.2164093+00:00</Created>
+          <Type>SQL</Type>
+          <Server>FBGSQL2019VM2</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
@@ -48,6 +60,30 @@
           <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>5 - GetRecoveryTimes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="6 - AcceleratedAgTransaction.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>6 - AcceleratedAgTransaction.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7 - RegularAgTransaction.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>7 - RegularAgTransaction.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8 - FailoverAg.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>8 - FailoverAg.sql</FullPath>
+        </FileNode>
+        <FileNode Name="9 - GetAgRecoveryTimes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>9 - GetAgRecoveryTimes.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
