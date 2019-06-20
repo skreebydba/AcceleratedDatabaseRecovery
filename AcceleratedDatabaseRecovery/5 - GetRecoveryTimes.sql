@@ -11,16 +11,21 @@ CREATE TABLE #errorlog
 INSERT INTO #errorlog
 EXEC sp_readerrorlog 0, 1, N'Recovery completed for database';
 
-SELECT *, PATINDEX('%analysis%', ErrorText) AS [Analysis (ms)], 
-SUBSTRING(ErrorText, PATINDEX('%analysis%', ErrorText), ),
-PATINDEX('%redo%', ErrorText) AS [Redo (ms)], 
-PATINDEX('%undo%', ErrorText) AS [Undo(ms)]
+SELECT 
+CASE 
+	WHEN ErrorText LIKE '%Accelerated%' THEN 'AcceleratedRecovery'
+	WHEN ErrorText LIKE '%Regular%' THEN 'RegularRecovery'
+END AS DatabaseName, 
+SUBSTRING(ErrorText, (PATINDEX('%analysis%', ErrorText) + 9), ((PATINDEX('%,%', ErrorText) - 3) -(PATINDEX('%analysis%', ErrorText) + 9))) AS [Analysis (ms)], 
+SUBSTRING(ErrorText, (PATINDEX('%redo%', ErrorText) + 5), ((CHARINDEX(',', ErrorText, PATINDEX('%redo%', ErrorText)) - 3) - (PATINDEX('%redo%', ErrorText) + 5))) AS [Redo (ms)],
+SUBSTRING(ErrorText, (PATINDEX('%undo%', ErrorText) + 5), ((CHARINDEX('.', ErrorText, PATINDEX('%undo%', ErrorText)) - 3) - (PATINDEX('%undo%', ErrorText) + 5))) AS [Undo(ms)]
 FROM #errorlog
 WHERE ErrorText LIKE '%AcceleratedRecovery%'
 OR ErrorText LIKE '%RegularRecovery%';
 
-SELECT SUBSTRING('a','bcabca', 3);
 
-SELECT * FROM #errorlog
+
+
+
 
 
