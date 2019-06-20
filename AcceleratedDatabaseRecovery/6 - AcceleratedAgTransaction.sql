@@ -4,7 +4,7 @@ SELECT @waitfor = CAST(DATEADD(SECOND, 10, CURRENT_TIMESTAMP) AS TIME);
 
 WAITFOR TIME @waitfor;
 
-USE AcceleratedRecovery;
+USE AcceleratedAg;
 GO
 DROP TABLE IF EXISTS dbo.fl1, dbo.fl2, dbo.fl3;
 
