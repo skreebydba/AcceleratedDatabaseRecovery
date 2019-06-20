@@ -2,37 +2,50 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AcceleratedDatabaseRecovery">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="FBGSQL2019VM1:FBGSQL2019\skreeby">
+          <Created>2019-06-20T00:16:21.9288391+00:00</Created>
+          <Type>SQL</Type>
+          <Server>FBGSQL2019VM1</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="1 - CreateDatabases.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>1 - CreateDatabases.sql</FullPath>
         </FileNode>
         <FileNode Name="2 - AcceleratedTransaction.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>2 - AcceleratedTransaction.sql</FullPath>
         </FileNode>
         <FileNode Name="3 - RegularTransaction.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>3 - RegularTransaction.sql</FullPath>
         </FileNode>
         <FileNode Name="4 - ShutdownInstance.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>4 - ShutdownInstance.sql</FullPath>
         </FileNode>
         <FileNode Name="5 - GetRecoveryTimes.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:FBGSQL2019VM1:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>FBGSQL2019VM1</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>5 - GetRecoveryTimes.sql</FullPath>
         </FileNode>
