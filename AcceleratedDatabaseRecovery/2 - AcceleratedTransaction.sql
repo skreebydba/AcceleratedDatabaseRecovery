@@ -1,3 +1,6 @@
+/*  Code modified from Aaron Bertrand's blog post 
+    https://www.mssqltips.com/sqlservertip/5971/accelerated-database-recovery-in-sql-server-2019/  */
+
 DECLARE @waitfor DATETIME;
 
 SELECT @waitfor = CAST(DATEADD(SECOND, 10, CURRENT_TIMESTAMP) AS TIME);
